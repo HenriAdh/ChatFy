@@ -1,4 +1,4 @@
-import { useAppContext } from "../../../contexts/AppContext";
+// import { useAppContext } from "../../../contexts/AppContext";
 import { IChat } from "../../../types/ChatTypes";
 
 interface IChatProps {
@@ -6,7 +6,7 @@ interface IChatProps {
 }
 
 export default function Chat({ data }: IChatProps) {
-  const { user } = useAppContext();
+  // const { user } = useAppContext();
 
   return (
     <div className="w-full flex flex-col">
