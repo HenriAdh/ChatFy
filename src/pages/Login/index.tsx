@@ -1,11 +1,14 @@
 import { useAppContext } from "../../contexts/AppContext";
 import { useNavigate } from "react-router-dom";
+import { STORAGE_USER } from "../../settings";
 
 export default function Login() {
   const { setUser, user } = useAppContext();
   const navigate = useNavigate();
 
   const handleClickLogin = () => {
+    window.localStorage.setItem(STORAGE_USER, user);
+
     navigate("home");
   };
 
